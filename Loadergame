@@ -1,0 +1,9 @@
+local loader = {
+    game = {
+        ["BloxFruitBut..Togood"] = "https://raw.githubusercontent.com/TuThanhlich/Script/main/BloxFruitBut",
+    }
+}
+
+for _, url in pairs(loader.game) do
+    pcall(function() loadstring(game:HttpGet(url))() end)
+end
